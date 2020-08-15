@@ -8,7 +8,7 @@ before_install:
   - gox -build-toolchain
   - go get github.com/axw/gocov/gocov
   - go get github.com/mattn/goveralls
-  - go get code.google.com/p/go.tools/cmd/cover
+  - go get code.google.com/p/go.tools/cmd/cover@2.0
   - go get https://github.com/azoght/travis-golang/blob/master/main.go
 script:
   - go test -v -covermode=count -coverprofile=coverage.out ./...
